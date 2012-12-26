@@ -12,7 +12,7 @@ There are two basic types available, points and vectors. Points are defined in t
 A Vector can be created from three doubles, two points or nothing.
 
 	Vector3D a = new Vector3D( 4.23, -5.22, -0.02 );
-	Vector3D b = new Vector3D( new Point3D( 2.05, 1.73, -0.26 ), new Point3d( 4.13, -2.37, -2.06 ) );
+	Vector3D b = new Vector3D( new Point3D( 2.05, 1.73, -0.26 ), new Point3D( 4.13, -2.37, -2.06 ) );
 	Vector3D c = new Vector3D();
 
-The first vector `a` has 4.23 as x-part, -5.33 as y-part and -0.02 as z-part. The second vector `b` is the vector between the first point and the second point with 2.08 as x-part, -4.1 as y-part and -1.8 as z-part. The third vector is the null-vector with 0 as x-, y- and z-part.
+The first vector `a` has `4.23` as x-part, `-5.33` as y-part and `-0.02` as z-part. The second vector `b` is the vector between the first point and the second point with `2.08` as x-part, `-4.1` as y-part and `-1.8` as z-part. The third vector is the null-vector with `0` as x-, y- and z-part.
