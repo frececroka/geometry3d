@@ -9,7 +9,7 @@ There are two basic types available, points and vectors. Points are defined in t
 
     Point3D p = new Point3D( 2.05, 1.73, -0.26 );
 
-A Vector can be created from three doubles, two points or nothing.
+A vector can be created from three doubles, two points or nothing.
 
 	Vector3D a = new Vector3D( 4.23, -5.22, -0.02 );
 	Vector3D b = new Vector3D( new Point3D( 2.05, 1.73, -0.26 ), new Point3D( 4.13, -2.37, -2.06 ) );
