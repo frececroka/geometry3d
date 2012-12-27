@@ -1,14 +1,9 @@
 package de.gorse.lorenz.geometry3d;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
-
-import de.gorse.lorenz.geometry3d.Line3D;
-import de.gorse.lorenz.geometry3d.Point3D;
-import de.gorse.lorenz.geometry3d.Vector3D;
 
 public class Line3DTest {
 	
