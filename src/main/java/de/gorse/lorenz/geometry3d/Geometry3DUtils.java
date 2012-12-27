@@ -46,6 +46,14 @@ public class Geometry3DUtils {
 
 		boolean iHaveR = false;
 		boolean iHaveS = false;
+		
+		/*
+		 * We have a system of linear equations:
+		 * 
+		 * ax + r * aa = bx + s * ba
+		 * ay + r * ab = by + s * bb
+		 * az + r * ac = bz + s * bc
+		 */
 
 		if ( aa != 0 && ba == 0 ) {
 			r = Geometry3DUtils.getR( ax, aa, bx );
