@@ -14,5 +14,10 @@ public class Line3D extends AbstractLine3D {
 	public boolean isValidCoefficient( double r ) {
 		return true;
 	}
+	
+	@Override
+	public Line3D clone() {
+		return new Line3D( this.getStart().clone(), this.getDirection().clone() );
+	}
 
 }

@@ -79,6 +79,11 @@ public class Vector3D {
 
 		return v.getX() == this.getX() && v.getY() == this.getY() && v.getZ() == this.getZ();
 	}
+	
+	@Override
+	public Vector3D clone() {
+		return new Vector3D( this.getX(), this.getY(), this.getZ() );
+	}
 
 	/*
 	 * Static methods
