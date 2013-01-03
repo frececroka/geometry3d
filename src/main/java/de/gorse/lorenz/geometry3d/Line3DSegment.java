@@ -15,4 +15,9 @@ public class Line3DSegment extends AbstractLine3D {
 	public String toString() {
 		return "Line3DSegment [From " + this.getPoint( 0 ) + " to " + this.getPoint( 1 ) + "]";
 	}
+	
+	@Override
+	public Line3DSegment clone() {
+		return new Line3DSegment( this.getStart().clone(), this.getPoint( 1 ).clone() );
+	}
 }
