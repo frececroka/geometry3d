@@ -5,7 +5,7 @@ package de.gorse.lorenz.geometry3d;
  * beginning from a simple line to a ray, line segment or any object, which
  * points belong to one line.
  * 
- * @author lorenz
+ * @author frececroka
  */
 public abstract class AbstractLine3D {
 

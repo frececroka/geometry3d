@@ -1,5 +1,10 @@
 package de.gorse.lorenz.geometry3d;
 
+/**
+ * A point.
+ * 
+ * @author frececroka
+ */
 public class Point3D {
 
 	private double x;
