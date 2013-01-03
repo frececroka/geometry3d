@@ -5,6 +5,11 @@ import org.apache.commons.math.linear.DecompositionSolver;
 import org.apache.commons.math.linear.LUDecompositionImpl;
 import org.apache.commons.math.linear.RealMatrix;
 
+/**
+ * A plane.
+ * 
+ * @author frececroka
+ */
 public class Plane3D {
 
 	private double a;
@@ -15,6 +20,16 @@ public class Plane3D {
 	private Vector3D vectorInPlane;
 	private Vector3D normalVector;
 
+	/**
+	 * Creates a new plane, going through each of the three given points.
+	 * 
+	 * @param a
+	 *            The first point.
+	 * @param b
+	 *            The second point.
+	 * @param c
+	 *            The third point.
+	 */
 	public Plane3D( Point3D a, Point3D b, Point3D c ) {
 		double[] values = { 1, 1, 1 };
 		double[][] coefficients = { { a.getX(), a.getY(), a.getZ() }, { b.getX(), b.getY(), b.getZ() },

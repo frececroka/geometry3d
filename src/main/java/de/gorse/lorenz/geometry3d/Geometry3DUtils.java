@@ -1,5 +1,10 @@
 package de.gorse.lorenz.geometry3d;
 
+/**
+ * This class provides common geometrical operations.
+ * 
+ * @author frececroka
+ */
 public class Geometry3DUtils {
 
 	private static double delta = 0.000001;

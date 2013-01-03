@@ -36,6 +36,16 @@ public class Point3D {
 		this.z = z;
 	}
 
+	/**
+	 * This moves the point to a new location by adding the given vector
+	 * <code>v</code>, multiplicated by the given value <code>d</code>, to the
+	 * original location of this point.
+	 * 
+	 * @param v
+	 *            The vector.
+	 * @param d
+	 *            The multiplicator.
+	 */
 	public void addVector( Vector3D v, double d ) {
 		this.setX( this.getX() + v.getX() * d );
 		this.setY( this.getY() + v.getY() * d );
@@ -66,6 +76,16 @@ public class Point3D {
 				&& Geometry3DUtils.equal( this.getZ(), p.getZ() );
 	}
 
+	/**
+	 * Calculates the distance between two points <code>a</code> and
+	 * <code>b</code>.
+	 * 
+	 * @param a
+	 *            The first point.
+	 * @param b
+	 *            The second point.
+	 * @return The distance between both points.
+	 */
 	public static double getDistance( Point3D a, Point3D b ) {
 		return Math.sqrt( Math.pow( a.getX() - b.getX(), 2 ) + Math.pow( a.getY() - b.getY(), 2 )
 				+ Math.pow( a.getZ() - b.getZ(), 2 ) );
